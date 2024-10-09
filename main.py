@@ -28,8 +28,8 @@ class ExampleApp(QtWidgets.QMainWindow, Ui_MainWindow):
             self.tableWidget.setRowCount(y)
             f = fieldnamenormaliser(f)
             self.tableWidget.setHorizontalHeaderLabels(f)
-            for i in range(x):
-                for j in range(y):
+            for i in range(y):
+                for j in range(x):
                     self.tableWidget.setItem(i, j, QTableWidgetItem(r[i][j]))
             self.tableWidget.resizeColumnsToContents()
 
