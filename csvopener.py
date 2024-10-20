@@ -3,13 +3,6 @@ import os
 from dataclasses import fields
 
 
-def openfile(path):
-    if os.path.splitext(path)[1] == '.csv':
-        print('Yep')
-        print(''.join(os.path.splitext(path)))
-    else:
-        print('Nope')
-
 def data_reading(path):
     fullpath = str(''.join(os.path.splitext(path)))
     fields, rows = [], []
@@ -21,10 +14,6 @@ def data_reading(path):
         # extracting each data row one by one
         for row in csvreader:
             rows.append(row)
-        print(fields)
-        print(rows)
-        print(len(fields)) #cтолбцы
-        print(len(rows)) #cтроки не считая заголовка
         return len(fields), len(rows), fields, rows
 
 
