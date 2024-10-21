@@ -2,6 +2,7 @@ from main import *
 from graph2 import *
 from plot import *
 from csvopener import *
+import itertools
 
 class Graph2App(QtWidgets.QWidget, Ui_Form):
     def __init__(self):
@@ -12,11 +13,11 @@ class Graph2App(QtWidgets.QWidget, Ui_Form):
         self.setWindowIcon(QtGui.QIcon('icon.png'))
 
     def graph2dgen(self):
-
         file = open('datalog.txt', 'r')
         b = file.readline()
         file.close()
         x1, y1, f, r = data_reading(b)
+        f = fieldnamenormaliser(doublenormaliser(f))
         rtrans = list(map(list, itertools.zip_longest(*r, fillvalue=None)))
-        x, y = rtrans[int(self.combo21.currentText())], rtrans[int(self.combo22.currentText())]
+        x, y = rtrans[int(f.index(self.combo21.currentText()))], rtrans[int(f.index(self.combo22.currentText()))]
         plot2d(x, y)

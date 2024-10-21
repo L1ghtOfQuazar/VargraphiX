@@ -26,3 +26,15 @@ def fieldnamenormaliser(list):
             n = ' '.join(i.split('_')).title()
             fieldsn.append(n)
     return fieldsn
+
+def doublenormaliser(list):
+    before, after, sh, s1, f  = list, [], 0, 0, []
+    for i in before:
+        if i not in after:
+            after.append(i)
+        else:
+            f.append(i)
+            after.append(i + str(f.count(i) + 1))
+    return after
+
+
