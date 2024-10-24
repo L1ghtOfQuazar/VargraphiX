@@ -1,4 +1,3 @@
-from oct2py import Oct2Py
 import time
 import sys
 import os
