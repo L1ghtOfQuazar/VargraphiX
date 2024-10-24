@@ -71,20 +71,16 @@ class Ui_VargraphiX(object):
         self.open.setStyleSheet("")
         self.open.setObjectName("open")
         self.horizontalLayout_2.addWidget(self.open)
-        self.save = QtWidgets.QPushButton(parent=self.centralwidget)
+        self.upd = QtWidgets.QPushButton(parent=self.centralwidget)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Maximum)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.save.sizePolicy().hasHeightForWidth())
-        self.save.setSizePolicy(sizePolicy)
-        self.save.setMaximumSize(QtCore.QSize(16777215, 30))
-        self.save.setCursor(QtGui.QCursor(QtCore.Qt.CursorShape.ArrowCursor))
-        self.save.setFocusPolicy(QtCore.Qt.FocusPolicy.NoFocus)
-        self.save.setAcceptDrops(False)
-        self.save.setStyleSheet("")
-        self.save.setObjectName("save")
-        self.horizontalLayout_2.addWidget(self.save)
-        spacerItem = QtWidgets.QSpacerItem(500, 30, QtWidgets.QSizePolicy.Policy.Maximum, QtWidgets.QSizePolicy.Policy.Minimum)
+        sizePolicy.setHeightForWidth(self.upd.sizePolicy().hasHeightForWidth())
+        self.upd.setSizePolicy(sizePolicy)
+        self.upd.setMaximumSize(QtCore.QSize(16777215, 30))
+        self.upd.setObjectName("upd")
+        self.horizontalLayout_2.addWidget(self.upd)
+        spacerItem = QtWidgets.QSpacerItem(450, 30, QtWidgets.QSizePolicy.Policy.Maximum, QtWidgets.QSizePolicy.Policy.Minimum)
         self.horizontalLayout_2.addItem(spacerItem)
         self.filter = QtWidgets.QPushButton(parent=self.centralwidget)
         self.filter.setEnabled(True)
@@ -248,18 +244,13 @@ class Ui_VargraphiX(object):
 "<p style=\"-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>"))
         self.open.setWhatsThis(_translate("VargraphiX", "<html><head/><body><p align=\"justify\"><br/></p></body></html>"))
         self.open.setText(_translate("VargraphiX", "Открыть файл"))
-        self.save.setToolTip(_translate("VargraphiX", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:8pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>"))
-        self.save.setText(_translate("VargraphiX", "Сохранить"))
+        self.upd.setText(_translate("VargraphiX", "Обновить"))
         self.filter.setToolTip(_translate("VargraphiX", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:8pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>"))
-        self.filter.setText(_translate("VargraphiX", "Фильтрация"))
+        self.filter.setText(_translate("VargraphiX", "Octave"))
         self.graph2.setToolTip(_translate("VargraphiX", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
