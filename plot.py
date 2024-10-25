@@ -2,6 +2,7 @@ import time
 import sys
 import os
 import os
+import subprocess
 def plot2d(x, y, x1, y1, col):
     x = [float(i) for i in x]
     y = [float(i) for i in y]

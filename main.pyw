@@ -9,6 +9,7 @@ from design import *
 from csvopener import *
 from plot import *
 import time
+import subprocess
 import itertools
 class MainApp(QtWidgets.QMainWindow, Ui_VargraphiX):
     def __init__(self):
